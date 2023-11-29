@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-bjuf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/push-pyxis-tenant/appstudio/devfile-sample-python-basic-bjuf@sha256:2ec574173cc74c401915ae32612baef6474309f7659b07858b590cfdec86c941
+        name: container-image
+        resources: {}
+status: {}
